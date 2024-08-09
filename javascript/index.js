@@ -1,13 +1,13 @@
 function updateTime() {
-  // Los Angeles
-  let losAngelesElement = document.querySelector("#los-angeles");
-  if (losAngelesElement) {
-    let losAngelesDateElement = losAngelesElement.querySelector(".date");
-    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-    let losAngelesTime = moment().tz("America/Los_Angeles");
+  // Johannesburg
+  let JohannesburgElement = document.querySelector("#Johannesburg");
+  if (JohannesburgElement) {
+    let JohannesburgDateElement = JohannesburgElement.querySelector(".date");
+    let JohannesburgTimeElement = JohannesburgElement.querySelector(".time");
+    let JohannesburgTime = moment().tz("Africa/Johannesburg");
 
-    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM	Do YYYY");
-    losAngelesTimeElement.innerHTML = losAngelesTime.format(
+    JohannesburgDateElement.innerHTML = JohannesburgTime.format("MMMM	Do YYYY");
+    JohannesburgTimeElement.innerHTML = JohannesburgTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
@@ -24,6 +24,7 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+  
 }
 
 function updateCity(event) {
